@@ -1,0 +1,64 @@
+@use 'variables';
+
+
+.soon {
+    display: flex;
+    gap: 60px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 60px;
+        margin: 0 auto;
+
+        &__title {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #1dd1a1;
+        }
+
+        &__numbers {
+            font-size: 3.5rem;
+            color: #ffda79;
+            font-weight: 700;   
+        }
+    }
+
+    @media (max-width: 1024px) {
+        margin-bottom: 40px;
+        gap: 20px;
+        
+        .soon__content__title {
+            font-size: 1.5rem;
+            
+        }
+
+        .soon__content__numbers {
+            font-size: 2rem;
+        }
+
+    }
+
+    
+    @media (max-width: 640px) {
+        margin-bottom: 20px;
+        gap: 4px;
+        
+        .soon__content {
+            margin-left: 35px;
+        }
+        .soon__content__title {
+            font-size: 1rem;
+            align-self: center;
+        }
+
+        .soon__content__numbers {
+            font-size: 1.5rem;
+        }
+    }
+
+    
+
+}

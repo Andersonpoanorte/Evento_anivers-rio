@@ -1,0 +1,159 @@
+@use 'variables';
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    .form {
+        max-width: 600px;
+        width: 100%; 
+    
+        .form__input {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            align-items: center;
+            
+            .form__control {
+                background: transparent;
+                border: none;
+                height: 50px;
+                border-radius: 5px;
+                width: 90%;
+                padding: 0px 20px;
+                font-size: 16px;
+                color: #838284;
+                box-shadow:
+                -6px -6px 10px rgb(255, 255, 255, 0.03),
+                6px 6px 10px rgb(10, 8, 10, 0.8),
+                inset -6px -6px 10px rgb(255, 255, 255, 0.05),
+                inset 6px 6px 10px rgb(12, 8, 12, 0.8);
+            }
+
+            .form__control:focus {
+                outline: none;
+            }
+
+            .add .material-icons {
+                background-color: #e5f325;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #161117;
+                border-radius: 15%;
+                margin-left: 15px;
+                cursor: pointer;
+                font-size: 30px;
+                font-weight: bold;
+                font-family: 'Material Icons';
+            }
+
+        }   
+
+        @media (max-width: 640px) {
+            padding: 0 15px;
+    
+            .form__input .add .material-icons {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    
+        @media (max-width: 1024px) {
+            padding:  0 15px;
+        }
+   
+    }
+
+    .to-do-list {
+            
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            color: #716973;
+            background: #221525;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 15px;
+            box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.55);
+        }
+    
+        .left-cont  input {
+            display: none;
+            cursor: pointer;
+        }
+    
+        .left-cont label {
+            position: relative;
+            cursor: pointer;
+        }
+    
+        .left-cont label:before {
+            content: '';
+            padding: 11px;
+            display: inline-block;
+            position: relative;
+            margin-right: 8px;
+            vertical-align: middle;
+            border-radius: 3px;
+            background: #412d46;
+        }
+    
+        .left-cont input:checked + label:before {
+            background: #e5f325;
+        }
+    
+        .left-cont input:checked + label:after {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            top: 4px;
+            left: 8px;
+            width: 5px;
+            height: 12px;
+            border: solid #221525;
+            border-width: 0px 2px 2px 0px;
+            transform: rotate(45deg);
+        }
+    
+        .left-cont input:checked ~ span {
+            color: rgba(255, 255, 255, .5);
+            text-decoration: line-through;
+        }
+    
+        .remove {
+            color: #ff0047;
+            cursor: pointer;
+            transform: translateY(48px);
+            transition: .5s;        
+        }
+        
+        .remove.active {
+            transform: translateY(0px);
+            transition: .5s;
+        }
+
+
+        .remove .material-icons {
+            font-family: 'Material icons';
+        }
+    }
+
+    
+
+}
+
+
+
+
+
+                   

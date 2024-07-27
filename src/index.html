@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Niver do Anderson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/main.scss">
+
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <p class="hero__text1">
+                Confirme sua presença no meu aniversário
+            </p>
+            <p class="hero__text2">Tempo estimado para o Evento</p>
+            <div class="soon">
+                <div class="soon__content">
+                    <h2 class="soon__content__title">Dias</h2>
+                    <span class="soon__content__numbers" id="days"></span>
+                </div>
+                <div class="soon__content">
+                    <h2 class="soon__content__title">Horas</h2>
+                    <span class="soon__content__numbers" id="hours"></span>
+                </div>
+                <div class="soon__content">
+                    <h2 class="soon__content__title">Minutos</h2>
+                    <span class="soon__content__numbers" id="minutes"></span>
+                </div>
+                <div class="soon__content">
+                    <h2 class="soon__content__title">Segundos</h2>
+                    <span class="soon__content__numbers" id="seconds"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="form">
+            <div class="form__input">
+                <input type="text" class="form__control" placeholder="Seu nome completo">
+                <div class="add"><i class="material-icons">+</i></div>
+            </div>
+            <ul class="to-do-list">
+               
+            </ul>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

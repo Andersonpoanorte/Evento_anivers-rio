@@ -1,0 +1,34 @@
+@use 'hero';
+@use 'variables';
+@use 'soon';
+@use 'form';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    color: variables.$textColor;
+}
+
+body {
+    background-color: #161117;
+    height: 100vh;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+}   
